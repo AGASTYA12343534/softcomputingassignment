@@ -1,0 +1,17 @@
+:root {
+  --bg-paper: #FAF7F0;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #F3EEE3;
+  --bg-lab: #0F1B33;
+  --border-default: #D9D2C3;
+  --border-strong: #B8AF9C;
+  --text-ink: #14213D;
+  --text-secondary: #4A5468;
+  --accent-teal: #2A7F82;
+  --accent-teal-hover: #1F6568;
+  --accent-orange: #D9772B;
+  --status-success: #2F7D4F;
+  --status-error: #B3392F;
+  --status-warning: #B7791F;
+}
+

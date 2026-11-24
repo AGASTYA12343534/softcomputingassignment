@@ -1,0 +1,63 @@
+@import '@fontsource/source-serif-4/400.css';
+@import '@fontsource/source-serif-4/600.css';
+@import '@fontsource/source-serif-4/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/500.css';
+@import 'katex/dist/katex.min.css';
+@import './tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--text-ink);
+    background-color: var(--bg-paper);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    color: var(--text-ink);
+    letter-spacing: -0.015em;
+  }
+
+  code, pre, .font-mono, .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent-teal);
+    outline-offset: 2px;
+  }
+}
+
+.formula-symbol {
+  cursor: pointer;
+  border-bottom: 1px dotted var(--accent-teal);
+  transition: background-color 120ms ease;
+}
+
+.formula-symbol:hover,
+.formula-symbol:focus-visible {
+  background-color: rgba(42, 127, 130, 0.12);
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  .print-break-avoid {
+    break-inside: avoid;
+  }
+}
+
